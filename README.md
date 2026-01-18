@@ -1,1 +1,6 @@
 # CNN_for_cifar10
+## 说明
+- 项目文件只包含了定义模型的两个文件，其中cnn.ipynb是用于实验CNN架构的一个简单模型，可以达到84%的准确度
+而cnn_withResNet.ipynb 利用了lightning自带的ResNet卷积层架构，可以冲击93%的高正确率，在notebook中标注了各部分的功能以及一些调试痕迹
+- 最终挑选了两个模型上传到Release中，为cnn.ipynb对应的model.ckpt和cnn_withResNet.ipynb对应的model_withRN5_reach93.3.ckpt以及model_withRN5_reach93_onlyP.pth(仅包含参数)
+- 由于训练过程的模型文件过大，git提交的版本记录和lightning的日志不好上传，故在release中附带了没有checkpoint文件的lightning log和git版本记录
